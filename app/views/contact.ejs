@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/contact.css"> 
+    <link rel="stylesheet" href="/css/base.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/about">About us</a></li>
+                <li><a href="/services">Our service</a></li>
+                <li><a href="/franchise">Franchise program</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h1>Get in touch with <br> STONE Accounting Group!</h1>
+                <p>Questions, comments, or suggestions?<br>
+                Simply fill in the form and we’ll be in touch shortly.</p>
+                <p>
+                    <span>📞</span> (+61) 355 231 234<br>
+                    <span>✉️</span> hello@stoneaccounting.com.au
+                </p>
+            </div>
+            <div>
+                <form action="/contact" method="POST">
+                    <div>
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="lastName" placeholder="Last Name">
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Email*" required>
+                    </div>
+                    <div>
+                        <input type="text" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Your message..." required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+                
+                <!-- Display success or error message -->
+                <% if (message) { %>
+                    <p><%= message %></p>
+                <% } %>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Your footer content -->
+    </footer>
+</body>
+</html>
