@@ -1,0 +1,68 @@
+/* services.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0026A3;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.services-section {
+    display: flex;
+    padding: 40px 20%;
+}
+
+.services-menu-container {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.services-content-container {
+    flex: 3;
+}
+
+.services-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.services-menu li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #666;
+}
+
+.services-menu li.active {
+    color: #0026A3;
+    font-weight: bold;
+}
+
+.service-content {
+    display: none;
+}
+
+.service-content.active {
+    display: block;
+}

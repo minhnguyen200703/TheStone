@@ -1,0 +1,67 @@
+/* franchise.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0026A3;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.franchise-section {
+    padding: 40px 20%;
+    text-align: center;
+}
+
+.benefits-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.icon {
+    cursor: pointer;
+    text-align: center;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.benefit-details {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.benefit-content {
+    display: none;
+}
+
+.benefit-content.active {
+    display: block;
+}
+
+.benefit-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
