@@ -36,22 +36,22 @@ header nav ul li a {
     text-decoration: none;
 }
 
-section {
+.contact {
     display: flex;
     justify-content: space-between;
     padding: 50px;
 }
 
-section div:first-child {
+.contact .contact_content {
     max-width: 50%;
 }
 
-section h1 {
+.contact_content h1 {
     font-size: 36px;
     color: #0026A3;
 }
 
-section p {
+.contact_content p {
     font-size: 16px;
     color: #666;
 }
