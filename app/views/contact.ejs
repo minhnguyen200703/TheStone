@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title>Contact</title>
     <link rel="stylesheet" href="/css/contact.css"> 
     <link rel="stylesheet" href="/css/base.css"> 
 </head>
@@ -20,8 +20,9 @@
     </header>
 
     <main>
-        <section>
-            <div>
+        <div class="contact">
+
+            <div class="contact_content">
                 <h1>Get in touch with <br> STONE Accounting Group!</h1>
                 <p>Questions, comments, or suggestions?<br>
                 Simply fill in the form and we’ll be in touch shortly.</p>
@@ -30,22 +31,22 @@
                     <span>✉️</span> hello@stoneaccounting.com.au
                 </p>
             </div>
-            <div>
+            <div class="contact_form">
                 <form action="/contact" method="POST">
-                    <div>
+                    <div class="contact_form-name">
                         <input type="text" name="name" placeholder="Name" required>
                         <input type="text" name="lastName" placeholder="Last Name">
                     </div>
-                    <div>
+                    <div class="contact_form-email">
                         <input type="email" name="email" placeholder="Email*" required>
                     </div>
-                    <div>
+                    <div class="contact_form-phone">
                         <input type="text" name="phone" placeholder="Phone Number">
                     </div>
-                    <div>
+                    <div class="contact_form-message">
                         <textarea name="message" placeholder="Your message..." required></textarea>
                     </div>
-                    <div>
+                    <div class="contact_form-submit">
                         <button type="submit">SEND</button>
                     </div>
                 </form>
@@ -56,7 +57,8 @@
                 <% } %>
                 
             </div>
-        </section>
+        </div>
+        
     </main>
 
     <footer>
