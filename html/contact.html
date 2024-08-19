@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/base.css"> 
+    <link rel="stylesheet" href="./css/contact.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/about">About us</a></li>
+                <li><a href="/services">Our service</a></li>
+                <li><a href="/franchise">Franchise program</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact">
+
+            <div class="contact_content">
+                <h1>Get in touch with <br> STONE Accounting Group!</h1>
+                <p class="contact_content-desc">Questions, comments, or suggestions?<br>
+                Simply fill in the form and we’ll be in touch shortly.</p>
+            
+            <div class="container">
+
+           
+                <div class="contact_info">
+                    <div class="contact_info-item">
+                        <div class="icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <p>(+61) 355 231 234</p>
+                        </div>
+                    </div>
+                    <div class="contact_info-item">
+                        <div class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="text">
+                            <p>hello@stoneaccounting.com.au</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            </div>
+                
+            <div class="contact_form">
+                <form action="/contact" method="POST">
+                    <div class="input_box contact_form-name">
+                        <input required="'required" type="text" name="name" placeholder="Name" required>
+                        <input required="'required" type="text" name="lastName" placeholder="Last Name">
+                    </div>
+                    <div class="input_box contact_form-email">
+                        <input required="'required" type="email" name="email" placeholder="Email*" required>
+                    </div>
+                    <div class="input_box contact_form-phone">
+                        <input required="'required" type="text" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="input_box contact_form-message">
+                        <textarea name="message" placeholder="Your message..." required></textarea>
+                    </div>
+                    <div class="input_box contact_form-submit">
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+                
+                <!-- Display success or error message
+                <% if (message) { %>
+                    <p><%= message %></p>
+                <% } %> -->
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <!-- Your footer content -->
+    </footer>
+</body>
+</html>
