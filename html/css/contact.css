@@ -48,7 +48,8 @@ header nav ul li a {
     position: relative;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 40px;
     align-items: center;
     flex-direction: row;
     
@@ -65,7 +66,10 @@ header nav ul li a {
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
+    padding: 20px;
 }
+
+
 
 .contact_content h1 {
     font-size: 2.2rem;
@@ -77,32 +81,27 @@ header nav ul li a {
 .contact_content p {
     color: #828282;
     text-align: left;
-
+    margin-bottom: 120px;
 }
 
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .contact_info {
+.contact_info {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    /* margin-top: 80px; */
 }
 
-.container .contact_info .contact_info-item{
+.contact_info .contact_info-item {
     position: relative;
     /* padding: 20px 0; */
     display: flex;
+    flex-direction: row;
 
 }
 
-.container .contact_info .contact_info-item .icon{
+.contact_info .contact_info-item .icon{
     /* min-width: 60px; */
     /* height: 60px; */
     background: #fff;
@@ -111,14 +110,14 @@ header nav ul li a {
     align-items: center;
 }
 
-.container .contact_info .contact_info-item .text    {
+.contact_info .contact_info-item .text    {
     display: flex;
     margin-left: 4px;
     font-size: 12px;
     
 }
 
-.container .contact_info .contact_info-item .text p   {
+.contact_info .contact_info-item .text p   {
     margin: 8px;
 }
 
@@ -161,7 +160,7 @@ header nav ul li a {
 
 .contact_form {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 24px;
     padding: 1.75rem 2.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -187,6 +186,7 @@ header nav ul li a {
     width: 100%;
 }
 
+
 .contact_form input[type="text"],
 .contact_form input[type="email"],
 .contact_form textarea {
@@ -195,7 +195,14 @@ header nav ul li a {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth transition */
 }
+
+.input_box input:focus {
+    border-color: #0419DC; /* Blue border color on focus */
+    outline: none; /* Remove default outline */
+}
+
 
 /* .contact_form input[type="text"] {
     width: calc(50% - 5px);
@@ -233,4 +240,33 @@ header nav ul li a {
 .contact_form-submit button:hover {
     /* background-color: #0056b3; */
     opacity: 0.8;
+}
+
+
+@media (max-width: 991px) {
+    main {
+        margin: 0;
+        width: 100%;
+    }
+    .contact {
+        padding: 50px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .contact_content h1 {
+        text-align: center;
+    }
+    .contact_info {
+        align-items: center;
+    }
+    .contact .contact_content {
+        align-items: center;
+    }
+    .contact_content .contact_content-desc {
+        margin-bottom: 20px;
+    }
+    .contact_form {
+        width: 100%;
+        max-width: 90%;
+    }
 }
