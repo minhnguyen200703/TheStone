@@ -16,6 +16,8 @@ const aboutController = require('../controllers/aboutController');
 const storyController = require('../controllers/storyController');
 const franchiseController = require('../controllers/franchiseController');
 const servicesController = require('../controllers/servicesController');
+const valueController = require('../controllers/valueController');
+const benefitController = require('../controllers/benefitController');
 
 // Define routes
 router.get('/', landingController.getLandingPage);
@@ -35,5 +37,11 @@ router.get('/franchise', franchiseController.getFranchisePage);
 
 // Services
 router.get('/services', servicesController.getServicesPage);
+
+// Value
+router.get('/value', valueController.getValuePage);
+
+// Benefit
+router.get('/benefit', benefitController.getBenefitPage);
 
 module.exports = router;

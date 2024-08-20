@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="/css/contact.css"> 
     <link rel="stylesheet" href="/css/base.css"> 
+    <link rel="stylesheet" href="/css/contact.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav>
             <ul>
                 <li><a href="/about">About us</a></li>
@@ -17,36 +18,55 @@
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
     <main>
         <div class="contact">
 
             <div class="contact_content">
                 <h1>Get in touch with <br> STONE Accounting Group!</h1>
-                <p>Questions, comments, or suggestions?<br>
+                <p class="contact_content-desc">Questions, comments, or suggestions?<br>
                 Simply fill in the form and we’ll be in touch shortly.</p>
-                <p>
-                    <span>📞</span> (+61) 355 231 234<br>
-                    <span>✉️</span> hello@stoneaccounting.com.au
-                </p>
+            
+
+           
+                <div class="contact_info">
+                    <div class="contact_info-item">
+                        <div class="icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <p>(+61) 355 231 234</p>
+                        </div>
+                    </div>
+                    <div class="contact_info-item">
+                        <div class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="text">
+                            <p style="text-decoration: underline;">hello@stoneaccounting.com.au</p>
+                        </div>
+                    </div>
+                </div>    
             </div>
+                
             <div class="contact_form">
                 <form action="/contact" method="POST">
-                    <div class="contact_form-name">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="text" name="lastName" placeholder="Last Name">
+                    <div class="input_box contact_form-name">
+                        <input required="'required" type="text" name="name" placeholder="Name" required>
+                        <input required="'required" type="text" name="lastName" placeholder="Last Name">
                     </div>
-                    <div class="contact_form-email">
-                        <input type="email" name="email" placeholder="Email*" required>
+                    <div class="input_box contact_form-email">
+                        <input required="'required" type="email" name="email" placeholder="Email*" required>
                     </div>
-                    <div class="contact_form-phone">
-                        <input type="text" name="phone" placeholder="Phone Number">
+                    <div class="input_box contact_form-phone">
+                        <input required="'required" type="text" name="phone" placeholder="Phone Number">
                     </div>
-                    <div class="contact_form-message">
+                    <div class="input_box contact_form-message">
                         <textarea name="message" placeholder="Your message..." required></textarea>
                     </div>
-                    <div class="contact_form-submit">
+                    <div class="input_box contact_form-submit">
                         <button type="submit">SEND</button>
                     </div>
                 </form>
